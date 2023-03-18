@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		8B27049729C56A8200E980C1 /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B27049629C56A8200E980C1 /* ProductViewModel.swift */; };
+		8B27049929C5727600E980C1 /* DetailProductController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B27049829C5727600E980C1 /* DetailProductController.swift */; };
 		8B3C713929C550C90042C64D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3C713829C550C90042C64D /* AppDelegate.swift */; };
 		8B3C713B29C550C90042C64D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3C713A29C550C90042C64D /* SceneDelegate.swift */; };
-		8B3C713D29C550C90042C64D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3C713C29C550C90042C64D /* ViewController.swift */; };
+		8B3C713D29C550C90042C64D /* ListOfProductController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3C713C29C550C90042C64D /* ListOfProductController.swift */; };
 		8B3C714029C550C90042C64D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B3C713E29C550C90042C64D /* Main.storyboard */; };
 		8B3C714329C550C90042C64D /* iOS_Developer_Test_DianaFL_PT_EZV_Services_Indonesia.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8B3C714129C550C90042C64D /* iOS_Developer_Test_DianaFL_PT_EZV_Services_Indonesia.xcdatamodeld */; };
 		8B3C714529C550CB0042C64D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B3C714429C550CB0042C64D /* Assets.xcassets */; };
@@ -23,10 +24,11 @@
 
 /* Begin PBXFileReference section */
 		8B27049629C56A8200E980C1 /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
+		8B27049829C5727600E980C1 /* DetailProductController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailProductController.swift; sourceTree = "<group>"; };
 		8B3C713529C550C90042C64D /* iOS-Developer-Test-DianaFL-PT-EZV-Services-Indonesia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Developer-Test-DianaFL-PT-EZV-Services-Indonesia.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B3C713829C550C90042C64D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B3C713A29C550C90042C64D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8B3C713C29C550C90042C64D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8B3C713C29C550C90042C64D /* ListOfProductController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfProductController.swift; sourceTree = "<group>"; };
 		8B3C713F29C550C90042C64D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8B3C714229C550C90042C64D /* iOS_Developer_Test_DianaFL_PT_EZV_Services_Indonesia.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iOS_Developer_Test_DianaFL_PT_EZV_Services_Indonesia.xcdatamodel; sourceTree = "<group>"; };
 		8B3C714429C550CB0042C64D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -93,7 +95,8 @@
 		8B3C714F29C553D00042C64D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				8B3C713C29C550C90042C64D /* ViewController.swift */,
+				8B3C713C29C550C90042C64D /* ListOfProductController.swift */,
+				8B27049829C5727600E980C1 /* DetailProductController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -205,8 +208,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B3C713D29C550C90042C64D /* ViewController.swift in Sources */,
+				8B3C713D29C550C90042C64D /* ListOfProductController.swift in Sources */,
 				8B3C713929C550C90042C64D /* AppDelegate.swift in Sources */,
+				8B27049929C5727600E980C1 /* DetailProductController.swift in Sources */,
 				8B3C713B29C550C90042C64D /* SceneDelegate.swift in Sources */,
 				8B3C714329C550C90042C64D /* iOS_Developer_Test_DianaFL_PT_EZV_Services_Indonesia.xcdatamodeld in Sources */,
 				8B3C715B29C55F650042C64D /* NetworkAPIService.swift in Sources */,
