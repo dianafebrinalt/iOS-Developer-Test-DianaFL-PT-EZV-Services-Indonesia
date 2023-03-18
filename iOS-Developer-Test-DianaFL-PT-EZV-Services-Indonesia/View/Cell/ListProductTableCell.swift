@@ -22,6 +22,7 @@ class ListProductTableCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        setData()
     }
     
     func setData() {

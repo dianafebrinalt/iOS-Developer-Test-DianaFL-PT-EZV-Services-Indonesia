@@ -38,7 +38,7 @@
                         </constraints>
                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                         <state key="normal" title="Detail">
-                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </state>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nm9-m5-Yhs">
@@ -62,10 +62,10 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="detailButton" destination="fAo-3x-mx9" id="BHx-Ca-AGm"/>
-                <outlet property="productDescriptionLabel" destination="nm9-m5-Yhs" id="2Bo-HV-wXy"/>
-                <outlet property="productNameLabel" destination="Dnn-tb-AUI" id="BBP-J3-p5X"/>
-                <outlet property="productThumbnail" destination="bW0-w5-6ze" id="W2g-qm-Z3d"/>
+                <outlet property="detailButton" destination="fAo-3x-mx9" id="yRn-qx-qkb"/>
+                <outlet property="productDescriptionLabel" destination="nm9-m5-Yhs" id="Wzu-iA-MDi"/>
+                <outlet property="productNameLabel" destination="Dnn-tb-AUI" id="jh0-ts-yJN"/>
+                <outlet property="productThumbnail" destination="bW0-w5-6ze" id="vjW-wp-2Ux"/>
             </connections>
             <point key="canvasLocation" x="183.96946564885496" y="47.887323943661976"/>
         </tableViewCell>
