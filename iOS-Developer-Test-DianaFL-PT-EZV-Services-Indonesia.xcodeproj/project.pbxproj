@@ -14,6 +14,8 @@
 		8B3C714329C550C90042C64D /* iOS_Developer_Test_DianaFL_PT_EZV_Services_Indonesia.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8B3C714129C550C90042C64D /* iOS_Developer_Test_DianaFL_PT_EZV_Services_Indonesia.xcdatamodeld */; };
 		8B3C714529C550CB0042C64D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B3C714429C550CB0042C64D /* Assets.xcassets */; };
 		8B3C714829C550CB0042C64D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B3C714629C550CB0042C64D /* LaunchScreen.storyboard */; };
+		8B3C715429C554390042C64D /* ListProductTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3C715229C554390042C64D /* ListProductTableCell.swift */; };
+		8B3C715529C554390042C64D /* ListProductTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B3C715329C554390042C64D /* ListProductTableCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		8B3C714429C550CB0042C64D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B3C714729C550CB0042C64D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B3C714929C550CB0042C64D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B3C715229C554390042C64D /* ListProductTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProductTableCell.swift; sourceTree = "<group>"; };
+		8B3C715329C554390042C64D /* ListProductTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListProductTableCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +62,42 @@
 		8B3C713729C550C90042C64D /* iOS-Developer-Test-DianaFL-PT-EZV-Services-Indonesia */ = {
 			isa = PBXGroup;
 			children = (
+				8B3C715029C553EC0042C64D /* View */,
+				8B3C714F29C553D00042C64D /* Controller */,
 				8B3C713829C550C90042C64D /* AppDelegate.swift */,
 				8B3C713A29C550C90042C64D /* SceneDelegate.swift */,
-				8B3C713C29C550C90042C64D /* ViewController.swift */,
-				8B3C713E29C550C90042C64D /* Main.storyboard */,
 				8B3C714429C550CB0042C64D /* Assets.xcassets */,
-				8B3C714629C550CB0042C64D /* LaunchScreen.storyboard */,
 				8B3C714929C550CB0042C64D /* Info.plist */,
 				8B3C714129C550C90042C64D /* iOS_Developer_Test_DianaFL_PT_EZV_Services_Indonesia.xcdatamodeld */,
 			);
 			path = "iOS-Developer-Test-DianaFL-PT-EZV-Services-Indonesia";
+			sourceTree = "<group>";
+		};
+		8B3C714F29C553D00042C64D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8B3C713C29C550C90042C64D /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8B3C715029C553EC0042C64D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8B3C715129C554170042C64D /* Cell */,
+				8B3C713E29C550C90042C64D /* Main.storyboard */,
+				8B3C714629C550CB0042C64D /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8B3C715129C554170042C64D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8B3C715229C554390042C64D /* ListProductTableCell.swift */,
+				8B3C715329C554390042C64D /* ListProductTableCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,6 +160,7 @@
 			files = (
 				8B3C714829C550CB0042C64D /* LaunchScreen.storyboard in Resources */,
 				8B3C714529C550CB0042C64D /* Assets.xcassets in Resources */,
+				8B3C715529C554390042C64D /* ListProductTableCell.xib in Resources */,
 				8B3C714029C550C90042C64D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,6 +176,7 @@
 				8B3C713929C550C90042C64D /* AppDelegate.swift in Sources */,
 				8B3C713B29C550C90042C64D /* SceneDelegate.swift in Sources */,
 				8B3C714329C550C90042C64D /* iOS_Developer_Test_DianaFL_PT_EZV_Services_Indonesia.xcdatamodeld in Sources */,
+				8B3C715429C554390042C64D /* ListProductTableCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
