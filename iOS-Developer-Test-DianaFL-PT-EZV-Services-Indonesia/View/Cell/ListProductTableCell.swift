@@ -8,7 +8,7 @@
 import UIKit
 
 protocol ListProductTableCellDelegate: AnyObject {
-    func goToProductDetail()
+    func goToProductDetail(name: String, description: String, discount: String, thumbnail: String, price: String, stock: String, rating: String, imagesProduct: [String])
 }
 
 class ListProductTableCell: UITableViewCell {
@@ -77,8 +77,7 @@ class ListProductTableCell: UITableViewCell {
     }
     
     @objc func goToDetailPage() {
-        print("BERHASIL")
-        delegate?.goToProductDetail()
+        delegate?.goToProductDetail(name: product?.title ?? "", description: product?.description ?? "", discount: "\(product?.discountPercentage ?? 0.0)" , thumbnail: product?.thumbnail ?? "", price: "\(product?.price ?? 0)", stock: "\(product?.stock ?? 0)", rating: "\(product?.rating ?? 0.0)", imagesProduct: product?.images ?? [])
     }
     
 }
