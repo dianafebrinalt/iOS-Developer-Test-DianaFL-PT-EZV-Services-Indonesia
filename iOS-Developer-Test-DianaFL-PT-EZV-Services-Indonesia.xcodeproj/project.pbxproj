@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B27049729C56A8200E980C1 /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B27049629C56A8200E980C1 /* ProductViewModel.swift */; };
 		8B3C713929C550C90042C64D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3C713829C550C90042C64D /* AppDelegate.swift */; };
 		8B3C713B29C550C90042C64D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3C713A29C550C90042C64D /* SceneDelegate.swift */; };
 		8B3C713D29C550C90042C64D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3C713C29C550C90042C64D /* ViewController.swift */; };
@@ -16,9 +17,12 @@
 		8B3C714829C550CB0042C64D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B3C714629C550CB0042C64D /* LaunchScreen.storyboard */; };
 		8B3C715429C554390042C64D /* ListProductTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3C715229C554390042C64D /* ListProductTableCell.swift */; };
 		8B3C715529C554390042C64D /* ListProductTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B3C715329C554390042C64D /* ListProductTableCell.xib */; };
+		8B3C715829C55E8E0042C64D /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3C715729C55E8E0042C64D /* Product.swift */; };
+		8B3C715B29C55F650042C64D /* NetworkAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3C715A29C55F650042C64D /* NetworkAPIService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B27049629C56A8200E980C1 /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
 		8B3C713529C550C90042C64D /* iOS-Developer-Test-DianaFL-PT-EZV-Services-Indonesia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Developer-Test-DianaFL-PT-EZV-Services-Indonesia.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B3C713829C550C90042C64D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B3C713A29C550C90042C64D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +34,8 @@
 		8B3C714929C550CB0042C64D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B3C715229C554390042C64D /* ListProductTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProductTableCell.swift; sourceTree = "<group>"; };
 		8B3C715329C554390042C64D /* ListProductTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListProductTableCell.xib; sourceTree = "<group>"; };
+		8B3C715729C55E8E0042C64D /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		8B3C715A29C55F650042C64D /* NetworkAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAPIService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B27049529C5699600E980C1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8B27049629C56A8200E980C1 /* ProductViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		8B3C712C29C550C90042C64D = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +76,9 @@
 		8B3C713729C550C90042C64D /* iOS-Developer-Test-DianaFL-PT-EZV-Services-Indonesia */ = {
 			isa = PBXGroup;
 			children = (
+				8B27049529C5699600E980C1 /* ViewModel */,
+				8B3C715929C55F4C0042C64D /* NetworkingService */,
+				8B3C715629C55E7B0042C64D /* Model */,
 				8B3C715029C553EC0042C64D /* View */,
 				8B3C714F29C553D00042C64D /* Controller */,
 				8B3C713829C550C90042C64D /* AppDelegate.swift */,
@@ -98,6 +115,22 @@
 				8B3C715329C554390042C64D /* ListProductTableCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		8B3C715629C55E7B0042C64D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8B3C715729C55E8E0042C64D /* Product.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8B3C715929C55F4C0042C64D /* NetworkingService */ = {
+			isa = PBXGroup;
+			children = (
+				8B3C715A29C55F650042C64D /* NetworkAPIService.swift */,
+			);
+			path = NetworkingService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,7 +209,10 @@
 				8B3C713929C550C90042C64D /* AppDelegate.swift in Sources */,
 				8B3C713B29C550C90042C64D /* SceneDelegate.swift in Sources */,
 				8B3C714329C550C90042C64D /* iOS_Developer_Test_DianaFL_PT_EZV_Services_Indonesia.xcdatamodeld in Sources */,
+				8B3C715B29C55F650042C64D /* NetworkAPIService.swift in Sources */,
 				8B3C715429C554390042C64D /* ListProductTableCell.swift in Sources */,
+				8B27049729C56A8200E980C1 /* ProductViewModel.swift in Sources */,
+				8B3C715829C55E8E0042C64D /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
