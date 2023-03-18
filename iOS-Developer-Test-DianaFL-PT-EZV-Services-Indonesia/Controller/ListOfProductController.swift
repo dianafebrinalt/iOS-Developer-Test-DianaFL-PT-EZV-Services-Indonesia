@@ -63,7 +63,16 @@ extension ListOfProductController: UITableViewDelegate, UITableViewDataSource {
 }
 
 extension ListOfProductController: ListProductTableCellDelegate {
-    func goToProductDetail() {
-        //GO TO DETAIL PAGE
+    func goToProductDetail(name: String, description: String, discount: String, thumbnail: String, price: String, stock: String, rating: String, imagesProduct: [String]) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "DetailProductController") as! DetailProductController
+        vc.thumbnailImage = thumbnail
+        vc.productStock = stock
+        vc.productsName = name
+        vc.productDescription = description
+        vc.listImageProduct = imagesProduct
+        vc.productPrice = price
+        vc.productDiscount = discount
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true, completion: nil)
     }
 }
