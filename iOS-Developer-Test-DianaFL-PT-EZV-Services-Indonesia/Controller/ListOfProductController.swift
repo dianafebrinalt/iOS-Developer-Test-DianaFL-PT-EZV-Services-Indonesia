@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ListOfProductController: UIViewController {
 
     @IBOutlet weak var listOfProductTableView: UITableView!
     
@@ -44,7 +44,7 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: UITableViewDelegate, UITableViewDataSource {
+extension ListOfProductController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return products.count
     }
@@ -62,7 +62,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
 }
 
-extension ViewController: ListProductTableCellDelegate {
+extension ListOfProductController: ListProductTableCellDelegate {
     func goToProductDetail() {
         //GO TO DETAIL PAGE
     }
