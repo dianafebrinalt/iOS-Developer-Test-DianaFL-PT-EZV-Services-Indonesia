@@ -14,32 +14,37 @@ class DetailProductController: UIViewController {
     @IBOutlet weak var productshumbnail: UIImageView!
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var descLabel: UILabel!
-    @IBOutlet weak var productName: UILabel!
     @IBOutlet weak var discLabel: UILabel!
-    
+    @IBOutlet weak var productNameLabel: UILabel!
     var productsName = ""
     var productDiscount = ""
     var productDescription = ""
-    var thumbnailImage: String?
+    var thumbnailImage = ""
     var productPrice = ""
     var productStock = ""
+    var productRating = ""
     var listImageProduct: [String] = []
     private var thumbnailUrl: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setDataDetailProduct()
+        setupCollectionView()
+    }
+    
+    func setupCollectionView() {
+        productImageCollectionView.dataSource = self
+        productImageCollectionView.delegate = self
     }
     
     func setDataDetailProduct() {
-        productName.text = productsName
+        productNameLabel.text = productsName
         descLabel.text = productDescription
-        priceLabel.text = productPrice
-        stocksLabel.text = productStock
+        priceLabel.text = "$ \(productPrice)"
+        stocksLabel.text = "Stock only : \(productStock)"
+        ratingLabel.text = "Rating for this product : \(productRating)"
         
-        guard let thumbnail = thumbnailImage else {return}
-        thumbnailUrl = thumbnail
-        guard let thumbnailURL = URL(string: thumbnailUrl) else {
+        guard let thumbnailURL = URL(string: thumbnailImage) else {
             self.productshumbnail.image = UIImage(systemName: "iphone.gen1")
             return
         }
@@ -69,5 +74,23 @@ class DetailProductController: UIViewController {
             }
         }
         task.resume()
+    }
+    
+    @IBAction func backButton(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+}
+
+extension DetailProductController: UICollectionViewDelegate, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return listImageProduct.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "detailCollectionCell", for: indexPath) as! DetailCollectionCell
+        
+        let images = listImageProduct[indexPath.item]
+        cell.setProductImage(image: images)
+        return cell
     }
 }

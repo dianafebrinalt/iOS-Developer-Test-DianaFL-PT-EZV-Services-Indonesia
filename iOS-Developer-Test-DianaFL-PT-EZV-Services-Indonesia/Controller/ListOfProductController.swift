@@ -71,6 +71,7 @@ extension ListOfProductController: ListProductTableCellDelegate {
         vc.productDescription = description
         vc.listImageProduct = imagesProduct
         vc.productPrice = price
+        vc.productRating = rating
         vc.productDiscount = discount
         vc.modalPresentationStyle = .fullScreen
         present(vc, animated: true, completion: nil)
